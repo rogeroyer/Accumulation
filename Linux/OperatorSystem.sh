@@ -49,4 +49,5 @@ root@roger:/home/roger# date -d today +%d
 12
 root@roger:/home/roger# 
 :::::END::::::
-
+inferd blog: 
+http://www.cnblogs.com/diyunpeng/archive/2011/11/20/2256538.html
