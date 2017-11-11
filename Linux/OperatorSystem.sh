@@ -33,3 +33,20 @@ DD=`date +%d`
 BACKETC=$YY$MM$DD_etc.tar.gz
 tar zcvf $BACKETC /etc
 echo "fileback finished!"
+
+example::
+root@roger:/home/roger# date -d today +%Y%m%d
+20171112
+root@roger:/home/roger# date -d today +%Y%m
+201711
+root@roger:/home/roger# date -d today +%y
+17
+root@roger:/home/roger# date -d today +%Y
+2017
+root@roger:/home/roger# date -d today +%m
+11
+root@roger:/home/roger# date -d today +%d
+12
+root@roger:/home/roger# 
+:::::END::::::
+
