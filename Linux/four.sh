@@ -14,3 +14,4 @@ fi
 
 
 # 命令：man mknod #
+# eg:mknod kuaifile b 8 10 #
