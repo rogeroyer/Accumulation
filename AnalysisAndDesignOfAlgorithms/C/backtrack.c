@@ -1,4 +1,5 @@
 // C语言实现0-1背包问题
+// 回溯法求解
 #include <stdio.h>
  
 #define N 3         //物品的数量
