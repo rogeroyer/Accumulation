@@ -20,7 +20,7 @@ class dynamicPrograming(object):
         if j < self.weight[i]:
             return self.solve(i - 1, j)
         else:
-            return max(self.solve(i - 1, j), value[i] + self.solve(i - 1, j - self.weight[i]))
+            return max(self.solve(i - 1, j), self.value[i] + self.solve(i - 1, j - self.weight[i]))
 
     def problem(self):
         for i in range(len(self.weight)):
