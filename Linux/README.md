@@ -35,3 +35,4 @@
       - 1)	需要有一个设备驱动程序
       - 2)	需要有一个测试程序，以验证设备驱动程序的功能。
 
+- [参考文档](https://www.cnblogs.com/chen-farsight/p/6155518.html#unit3.1.5)
