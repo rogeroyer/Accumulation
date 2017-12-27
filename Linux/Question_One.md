@@ -127,4 +127,4 @@ cat << EOF
 EOF
 ```
 
-`[参考网站]`(http://www.linuxde.net/2011/12/5756.html)
+`[参考网站](http://www.linuxde.net/2011/12/5756.html)`
