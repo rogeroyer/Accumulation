@@ -1,4 +1,22 @@
+## 对脚本的内容做一下说明： 
 
+- 先对系统进行判断，如果是Cent OS 64位，就继续运行。
+- 先将系统的安装源设置为网易的（网易的安装源算是国内比较稳定的）
+- 安装epel的源和rpmforge的源，利用第三方的源来让yum安装起来更方便
+- 更新软件
+- 设置为每天凌晨四点进行时间同步（跟国家授时中心的服务器进行时间同步）
+- 将系统同时打开的文件个数增大
+- 将ctrl alt delete键进行屏蔽，防止误操作的时候服务器重启
+- 关闭selinux
+- 禁用GSSAPI来认证，也禁用DNS反向解析，加快SSH登陆速度
+- 优化一些内核参数
+- 调整删除字符的按键为backspace（某些系统默认是delete）
+- 打开vim的语法高亮
+- 取消生成whatis数据库和locate数据库
+- 关闭没用的服务
+- 关闭IPv6
+
+```shell
 #!/bin/bash
 #author suzezhi
 #this script is only for CentOS 6
@@ -107,25 +125,6 @@ cat << EOF
 |   it's recommond to restart this server !       |
 +-------------------------------------------------+
 EOF
+```
 
-
-对脚本的内容做一下说明： 
-
-先对系统进行判断，如果是Cent OS 64位，就继续运行。
-先将系统的安装源设置为网易的（网易的安装源算是国内比较稳定的）
-安装epel的源和rpmforge的源，利用第三方的源来让yum安装起来更方便
-更新软件
-设置为每天凌晨四点进行时间同步（跟国家授时中心的服务器进行时间同步）
-将系统同时打开的文件个数增大
-将ctrl alt delete键进行屏蔽，防止误操作的时候服务器重启
-关闭selinux
-禁用GSSAPI来认证，也禁用DNS反向解析，加快SSH登陆速度
-优化一些内核参数
-调整删除字符的按键为backspace（某些系统默认是delete）
-打开vim的语法高亮
-取消生成whatis数据库和locate数据库
-关闭没用的服务
-关闭IPv6
-
-
-参考网站：http://www.linuxde.net/2011/12/5756.html
+`[参考网站]`(http://www.linuxde.net/2011/12/5756.html)
