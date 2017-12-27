@@ -94,6 +94,7 @@ mv /etc/cron.daily/mlocate.cron /etc/cron.daily.bak
 chkconfig bluetooth off
 chkconfig cups off
 chkconfig ip6tables off
+
 #disable the ipv6
 cat > /etc/modprobe.d/ipv6.conf << EOFI
 alias net-pf-10 off
