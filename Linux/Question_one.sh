@@ -1,4 +1,5 @@
 #!/bin/bash
+# 系统版本CentOS 7
 # 先对系统进行判断，如果是Cent OS 64位，就继续运行
 platform=`uname -i`
 if [ $platform != "x86_64" ];then 
