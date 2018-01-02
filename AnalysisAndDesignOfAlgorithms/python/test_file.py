@@ -34,7 +34,4 @@ al.printout()
 timeused = time.clock() - start
 print('用时：', timeused)
 
-# List = [dynamicPrograming(weight, value, max_weight) for index in range(10)]
-# for index in List:
-#     index.printout()
 
