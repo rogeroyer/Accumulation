@@ -1,7 +1,7 @@
 #include <Windows.h>  
 #include <gl/glut.h>  
 //////////////////////////////////////////////////////////////////////////  
-//区域码  
+//区域码    
 const GLint leftBitCode=0x1;  
 const GLint rightBitCode=0x2;  
 const GLint buttonBitCode=0x4;  
