@@ -12,3 +12,5 @@
   - [Bezier曲线](http://blog.csdn.net/dreamcs/article/details/7225139)
 
 ***
+### [3D图形学基础上](https://www.phpyuan.com/article/781.html)
+### [3D图形学基础下](https://www.qcloud.com/community/article/555869)
