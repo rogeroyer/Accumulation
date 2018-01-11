@@ -12,6 +12,10 @@ mysql>create database phplampDB;
 mysql>grant all privileges on phplampDB.* to phplamp@localhost identified by '1234';
 //刷新系统权限表
 mysql>flush privileges;
+//如果想指定部分权限给一用户，可以这样来写:
+mysql>grant select,update on phplampDB.* to phplamp@localhost identified by '1234';
+//刷新系统权限表。
+mysql>flush privileges;
 ```
 
 ***
