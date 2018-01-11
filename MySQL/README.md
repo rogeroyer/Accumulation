@@ -4,6 +4,8 @@
 
 - mysql新建用户
 > CREATE USER 'username'@'host' IDENTIFIED BY 'password';
+- 授权访问数据库
+> GRANT ALL PRIVILEGES ON *.*TO 'root'@'%' IDENTIFIED BY '123456' WITH GRANT OPTION;
 
 - mysql为用户授权
 ```mysql
