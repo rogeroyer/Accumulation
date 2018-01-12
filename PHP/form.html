@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>表单元素</title>
+<script type="text/javascript">
+	function Results(name, suggestion, fruit, sport, city){
+//		confirm(name.value);
+//		document.write(city.value);
+//		document.write(suggestion.value);
+
+		document.writeln("Hello" + name.value);
+		document.writeln(", 你的意见是："+ suggestion.value);
+		document.writeln(",你喜欢的城市是："+city.value);
+
+<!--		alert("Hello" + name.value + ", 你的意见是："+ suggestion.value +",你喜欢的城市是："+city.value);    -->
+<!--		document.write("Hello" + name.value + ", 你的意见是："+ suggestion.value +",你喜欢的城市是："+city.value);  -->
+		
+		
+		
+//		for (i = 0;i < fruit.length;i++)
+//		{
+//			if(fruit[i].checked == true)
+//				Fruit = fruit[i].value;
+//		}
+		
+/*		Sport = "";
+		document.write("你喜欢的运动是:"+Sport);
+		for (i = 0;i < sport.length;i++)
+		{
+			if(sport[i].checked == true) {
+				Sport = Sport + sport[i].value + ",";
+				alert(sport[i].value);
+			}
+		}
+		document.write("你喜欢的运动是:"+Sport);
+*/
+<!-- ", 你喜欢的水果是："+ Fruit +", 你喜欢的运动是："+sport.value+ -->
+
+<!--		document.write("Hello" + name.value + ", 你的意见是："+ suggestion.value +",你喜欢的城市是："+city.value); -->
+	}
+</script>
+</head>
+<!--background="picture\BingWallpaper.jpg"-->
+<body bgcolor="#FFFFCC" text="#333366" link="#CC3333" vlink="#FFFFFF" leftmargin=600  topmargin="100" >
+<form name="info" action="database/connect.php" method="post">         <!-- database/connect.php  display.php -->
+
+请输入你的姓名：<br>
+<input type="text" name="name" placeholder="username"> <br><br>
+
+请输入密码：<br>
+<input type="password" name="password" placeholder="password"> <br>
+
+<br>请提出宝贵意见：<br>
+<textarea name="suggestion" col=10 rows=10 placeholder="suggestion">
+</textarea> <br>
+
+<br>请选择你喜欢的水果：<br>
+<input type="radio" name="fruit" value="apple" checked>苹果<br>
+<input type="radio" name="fruit" value="orange">橘子<br>
+<input type="radio" name="fruit" value="mango">芒果<br>
+<input type="radio" name="fruit" value="banana">香蕉<br>
+
+<br>请选择你喜欢的运动:<br>
+<input type="checkbox" name="sport[]"  value="basketball" checked>篮球<br>
+<input type="checkbox" name="sport[]"  value="tabletennis">乒乓球<br>
+<input type="checkbox" name="sport[]"  value="volleyball">排球<br>
+<input type="checkbox" name="sport[]"  value="football">足球<br>
+<br>
+
+请选择你喜欢的城市:<br>
+<select name="city">
+<option selected value="ChongQing">重庆
+<option value="ChengDu">成都
+<option value="Newyork">纽约
+<option value="paris">巴黎
+</select> <br>
+<!--
+document.getElementById("city")
+document.info.city
+-->
+
+<br><input type="button" value="确认" onClick="Results(document.info.name, document.info.suggestion, document.info.fruit, document.info.sport, document.info.city)"> 
+&nbsp &nbsp &nbsp <input type="reset" value="重置">
+&nbsp &nbsp &nbsp <input type="submit" value="提交">
+<!--&nbsp &nbsp &nbsp <input type="image" src="button.gif" name="提交" />-->
+
+</form>
+
+</table>
+</body>
+</html>
+	
