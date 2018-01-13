@@ -37,3 +37,12 @@
 
 - [参考文档](https://www.cnblogs.com/chen-farsight/p/6155518.html#unit3.1.5)
 - [参考文档（首选）](http://blog.csdn.net/creazyapple/article/details/7290680)
+
+## XAMPP
+- [xampp](https://www.apachefriends.org/faq_linux.html)
+- Path
+  > XAMPP will be installed to /opt/lampp
+- Start xampp
+  > sudo /opt/lampp/lampp start
+- Stop xampp
+  > sudo /opt/lampp/lampp stop
