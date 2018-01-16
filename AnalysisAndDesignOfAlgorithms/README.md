@@ -12,3 +12,5 @@
 
 - 回溯法
    - [算法入门6：回溯法](http://m.blog.csdn.net/jarvischu/article/details/16067319)
+
+- [JavaScript](https://segmentfault.com/a/1190000012829866?utm_source=weekly&utm_medium=email&utm_campaign=email_weekly)
