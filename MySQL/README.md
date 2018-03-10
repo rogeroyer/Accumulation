@@ -21,3 +21,5 @@ mysql>flush privileges;
 ```
 
 ***
+
+#### [python连接数据库](http://www.cnblogs.com/wt11/p/6141225.html)
