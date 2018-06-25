@@ -23,7 +23,7 @@ class AntsAlgorithm(object):
         self.Beta = beta                                  # Beta 表征启发式因子重要程度的参数 #
         self.Rho = rho                                    # Rho 信息素蒸发系数 #
         self.Iterations = iterations                      # 最大迭代次数 #
-        self.Coordinate = self.init_citys()     # 初始化城市坐标 #
+        self.Coordinate = self.init_citys()               # 初始化城市坐标 #
         self.CityFlag = [index for index in range(0, len(self.Coordinate), 1)]   # 城市标记 #
         self.GreedyBestPath = self.calc_greedy_path()                            # 贪心算法找到的最优解 #
         self.PheromoneMatrix = np.array([[self.m / self.GreedyBestPath] * len(self.Coordinate) for index in range(len(self.Coordinate))])     # 信息素浓度矩阵 #
@@ -83,10 +83,14 @@ class AntsAlgorithm(object):
 
     def update_pheromone(self):
         '''更新路径上的信息素'''
+        for i in range(len(ant_algorithm.Coordinate)):
+            for j in range(len(ant_algorithm.Coordinate)):
+                self.PheromoneMatrix[i][j] = (1 - self.Rho) * self.PheromoneMatrix[i][j]
+
         for ants in self.Ants:
             ants.path.append(ants.origin)    # 环路 #
             for index in range(len(ants.path) - 1):
-                self.PheromoneMatrix[ants.path[index]][ants.path[index+1]] = (1 - self.Rho) * self.PheromoneMatrix[ants.path[index]][ants.path[index+1]] + (1.0 / ants.score)
+                self.PheromoneMatrix[ants.path[index]][ants.path[index+1]] = 1.0 / ants.score              # (1 - self.Rho) * self.PheromoneMatrix[ants.path[index]][ants.path[index+1]] +  #
                 self.PheromoneMatrix[ants.path[index+1]][ants.path[index]] = self.PheromoneMatrix[ants.path[index]][ants.path[index+1]]
 
     def calc_greedy_path(self):
@@ -150,7 +154,7 @@ class AntsAlgorithm(object):
 
 
 if __name__ == '__main__':
-    ant_algorithm = AntsAlgorithm(m=100, alpha=1, beta=5, rho=0.5, iterations=500)
+    ant_algorithm = AntsAlgorithm(m=100, alpha=1, beta=5, rho=0.5, iterations=200)
     print(ant_algorithm.GreedyBestPath)
     ant_algorithm.ants_run()
 
