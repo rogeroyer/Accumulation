@@ -110,7 +110,7 @@ class AntsAlgorithm(object):
             sum_distance += distance
             close_table.remove(flag)
             open_table.append(flag)
-        sum_distance += self.calc_distance(open_table[-1], open_table[0])
+        sum_distance += self.calc_distance(open_table[-1], open_table[0]) 
         return sum_distance
 
     def ants_run(self):
