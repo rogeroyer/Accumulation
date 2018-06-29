@@ -12,7 +12,7 @@ import random
 import copy
 import numpy as np
 import pandas as pd
-from Ants import Ant
+from tsp.Ants import Ant
 import matplotlib.pyplot as plt
 
 
@@ -110,6 +110,7 @@ class AntsAlgorithm(object):
             sum_distance += distance
             close_table.remove(flag)
             open_table.append(flag)
+        sum_distance += self.calc_distance(open_table[-1], open_table[0])
         return sum_distance
 
     def ants_run(self):
@@ -154,7 +155,7 @@ class AntsAlgorithm(object):
 
 
 if __name__ == '__main__':
-    ant_algorithm = AntsAlgorithm(m=100, alpha=1, beta=5, rho=0.5, iterations=200)
+    ant_algorithm = AntsAlgorithm(m=100, alpha=1, beta=5, rho=0.5, iterations=100)
     print(ant_algorithm.GreedyBestPath)
     ant_algorithm.ants_run()
 
