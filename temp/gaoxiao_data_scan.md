@@ -1,5 +1,6 @@
 ```
-app_launch:          user_id  day
+app_launch:          
+         user_id  day
 0        3570341   26
 1        3570341   24
 2        3570341   16
@@ -63,7 +64,8 @@ app_launch:          user_id  day
 2804635  6447028   30
 
 [2804636 rows x 2 columns]
-user_activity            user_id  day  page  video_id  author_id  action_type
+user_activity            
+           user_id  day  page  video_id  author_id  action_type
 0          3261782   30     0  23250746      76375            2
 1          3492965   30     0  23250746      76375            0
 2          3711165   30     0  23250746      76375            0
@@ -127,7 +129,8 @@ user_activity            user_id  day  page  video_id  author_id  action_type
 231341229  6991227   30     0  21458431    2157679            0
 
 [231341230 rows x 6 columns]
-user_register         user_id  register_day  register_type  device_type
+user_register         
+        user_id  register_day  register_type  device_type
 0       3570341             1              2           84
 1       3030922             1              2            7
 2       2291176             1              2           13
@@ -191,7 +194,8 @@ user_register         user_id  register_day  register_type  device_type
 572131  6447028            30              0           27
 
 [572132 rows x 4 columns]
-user_register         user_id  day
+user_register         
+        user_id  day
 0       3587817    4
 1       3587817    1
 2       3055770    4
