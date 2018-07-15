@@ -1,3 +1,4 @@
+```
 app_launch:          user_id  day
 0        3570341   26
 1        3570341   24
@@ -254,3 +255,5 @@ user_register         user_id  day
 388246  2515474   30
 
 [388247 rows x 2 columns]
+```
+
