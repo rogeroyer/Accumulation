@@ -194,7 +194,7 @@ user_register
 572131  6447028            30              0           27
 
 [572132 rows x 4 columns]
-user_register         
+video_create         
         user_id  day
 0       3587817    4
 1       3587817    1
@@ -261,3 +261,35 @@ user_register
 [388247 rows x 2 columns]
 ```
 
+
+
+
+'''
+start read data...
+read data over...
+(264492, 90)
+(413752, 90)
+(572132, 90)
+extract activity features successfully!
+(264492, 20)
+(413752, 20)
+(572132, 20)
+extract register features successfully!
+(264492, 39)
+(413752, 39)
+(572132, 39)
+extract launch features successfully!
+(264492, 42)
+(413752, 42)
+(572132, 42)
+extract video features successfully!
+extract join table features successfully!
+sorted features successfully!
+start to store features...
+store features successfully!
+fill null successfully！
+iteration round: 500
+result.csv store successfully!
+program is over!
+program spend time： 10684.575388  sec
+'''
