@@ -293,3 +293,14 @@ result.csv store successfully!
 program is over!
 program spend time： 10684.575388  sec
 ```
+
+```
+start read data...
+read data over...
+read features successfully!
+iteration round: 500
+validate auc is: 0.8876778820014429
+result.csv store successfully!
+program is over!
+program spend time： 4825.8057290000015  sec
+```
