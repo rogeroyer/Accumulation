@@ -304,3 +304,8 @@ result.csv store successfully!
 program is over!
 program spend time： 4825.8057290000015  sec
 ```
+
+```
+>>> ModeResult(mode=array([ 0.06569402]), count=array([93961]))
+```
+
