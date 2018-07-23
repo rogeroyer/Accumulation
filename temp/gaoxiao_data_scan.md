@@ -309,3 +309,124 @@ program spend time： 4825.8057290000015  sec
 >>> ModeResult(mode=array([ 0.06569402]), count=array([93961]))
 ```
 
+
+'''
+start read data...
+read data over...
+divide data set successfully!
+9
+13
+1
+2
+3
+4
+5
+6
+8
+10
+11
+12
+(572132, 84)
+9
+13
+1
+2
+3
+4
+5
+6
+8
+10
+11
+12
+(413752, 84)
+9
+13
+1
+2
+3
+4
+5
+6
+8
+10
+11
+12
+(264492, 84)
+extract activity features successfully!
+1
+2
+(264492, 20)
+1
+2
+(413752, 20)
+1
+2
+(572132, 20)
+extract register features successfully!
+1
+2
+3
+4
+5
+(264492, 39)
+1
+2
+3
+4
+5
+(413752, 39)
+1
+2
+3
+4
+5
+(572132, 39)
+extract launch features successfully!
+1
+2
+3
+4
+5
+6
+7
+(264492, 42)
+1
+2
+3
+4
+5
+6
+7
+(413752, 42)
+1
+2
+3
+4
+5
+6
+7
+(572132, 42)
+extract video features successfully!
+extract join table features successfully!
+sorted features successfully!
+start to store features...
+store features successfully!
+fill null successfully！
+iteration round: 500
+auc score: 0.8903054623846065
+program is over!
+program spend time： 7719.014040999999  sec
+
+Not fillna with 0:
+start read data...
+read data over...
+read features successfully!
+iteration round: 500
+auc score: 0.8906296703286407
+result.csv store successfully!
+program is over!
+program spend time： 4546.327324  sec
+
+'''
+
