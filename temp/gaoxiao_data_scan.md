@@ -428,5 +428,20 @@ result.csv store successfully!
 program is over!
 program spend time： 4546.327324  sec
 
+
+with gap features:
+start read data...
+read data over...
+divide data set successfully!
+7
+7
+7
+extract activity features successfully!
+read features successfully!
+iteration round: 500
+auc score: 0.8906870166660884
+result.csv store successfully!
+program is over!
+program spend time： 5495.845689  sec
 ```
 
