@@ -300,6 +300,7 @@ read data over...
 read features successfully!
 iteration round: 500
 validate auc is: 0.8876778820014429
+validate auc is: 0.8876205156780547  #######
 result.csv store successfully!
 program is over!
 program spend time： 4825.8057290000015  sec
