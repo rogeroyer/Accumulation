@@ -2,7 +2,10 @@
 # n, k = sys_in[0], sys_in[1]
 n, k = 10, 3
 
-
+if k == 1:
+    print(n)
+    exit(0)
+    
 def check_number(num, flag):
     if num % flag == 0:
         return 0
