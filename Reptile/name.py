@@ -12,7 +12,7 @@ print(html)
 # pattern1 = r'<td>[0-28]</td>'
 # pattern1 = r'<td>[0-9]</td>'
 pattern1 = u'</td><td>([\u4e00-\u9fa5]+)</td><td>[男女]</td><td>04121709'
-pattern2 = r'韦鑫桥'
+pattern2 = r'啊啊啊'
 # print(re.search(pattern1, html, re.M))
 print(re.search(pattern1, html, re.M).group())
 print(re.search(pattern2, html, re.M).group())
@@ -21,4 +21,4 @@ print(re.search(pattern2, html, re.M).group())
 # for name in namelist:
 #     print(name)
 
-# <tr><td>2</td><td>2017211978</td><td>努尔比耶·图拉克</td><td>女</td><td>04121709</td>
+# <tr><td>2</td><td>2017211978</td><td>啊啊啊</td><td>女</td><td>04121709</td>
