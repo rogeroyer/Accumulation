@@ -59,3 +59,8 @@ op_to_restore = graph.get_tensor_by_name("op_to_restore:0")
 print sess.run(op_to_restore,feed_dict)
 #This will print 60 which is calculated 
 ```
+
+
+Reference:
+https://stackoverflow.com/questions/33759623/tensorflow-how-to-save-restore-a-model
+https://cv-tricks.com/tensorflow-tutorial/save-restore-tensorflow-models-quick-complete-tutorial/
