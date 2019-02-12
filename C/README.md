@@ -5,3 +5,5 @@
 - 指针的理解[\*\*p.c](https://github.com/rogeroyer/MyProject/blob/master/C/**p.c)
 
 - 汉诺塔问题[hanoi.c](https://github.com/rogeroyer/Accumulation/blob/master/C/hanoi.c)
+
+- 宏定义[define.c](https://github.com/rogeroyer/Accumulation/blob/master/C/define.c)
