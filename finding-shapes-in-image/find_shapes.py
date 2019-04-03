@@ -30,7 +30,7 @@ cv2.imshow("Mask", shapeMask)
 
 # loop over the contours
 for c in cnts:
-	# draw the contour and show it
-	cv2.drawContours(image, [c], -1, (0, 255, 0), 2)
-	cv2.imshow("Image", image)
-	cv2.waitKey(0)
+    # draw the contour and show it
+    cv2.drawContours(image, [c], -1, (0, 255, 0), 2)
+    cv2.imshow("Image", image)
+    cv2.waitKey(0)
